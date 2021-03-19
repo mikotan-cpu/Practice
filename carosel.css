@@ -1,0 +1,527 @@
+/* Navbar*/
+
+.topMargin{
+  margin-top: 20px
+}
+.text{
+	font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 18px;
+}
+.navbar-nav > li{
+  margin-left:17px;
+  margin-right:17px;
+}
+
+.cover{
+	object-fit: cover;
+}
+
+strong{
+	color: #4bffa5;
+}
+
+.h1{
+    color: white;
+}
+
+ .animation{
+	color: #fff;
+	font-family: monospace;
+	padding-top: 5em;
+	display: flex;
+	justify-content: center;
+  }
+
+  .margin{
+      margin-top: -100px;
+  }
+
+.size{
+  font-size: 18px;
+}
+body{
+    background: black;
+    font-family: 'Roboto';;
+}
+
+
+
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    width: 700px;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 30px;
+    left: 16px;
+  }
+  .parallax-window {
+    height: 650px;
+    width: 520px;
+    background: transparent;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-size: 64px;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    text-align: center;
+    color: white;
+}
+
+.content{
+    max-width: 960px;
+    margin: 30px auto;
+    padding:  20px 30px;
+    border-radius: 10px 120px 10px 10px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+}
+
+.info{
+    list-style-type: none;
+}
+ #others span{
+  display: block;
+  width: 500px;
+  margin-left: -35px;
+}
+/* #educations, #organizations, #projects{
+    font-size: 40px;
+    color: #555;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    margin-top: -20px;
+    margin-bottom: 90px;
+
+} */
+
+/* #educations:nth-child(even), #organizations:nth-child(even) , #projects:nth-child(even){
+    padding: 20px;
+    color: #4bffa5;
+} */
+
+#educations span,#organizations span{
+    display: block;
+    width: 300px;
+    text-align: center;
+    margin-right: 20px;
+}
+/* #projects span{
+  display: block;
+} */
+.centerTest {
+  width:100%;
+  text-align:center;
+}
+.cardTitle{
+  color :  #4bffa5;
+  text-align: center;
+  margin-top: 20px;
+  font-weight:700;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.cardBody{
+  color:#fff;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 17px;
+}
+.cardStyle{
+   background-color: black;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.deets{
+  font-size: 50px;
+  margin-top: 80px;
+  color: white;
+}
+.deets2{
+  font-size: 25px;
+  margin-top: 80px;
+  color: white;
+}
+.container2{
+  width: 60%;
+}
+/* #educations span:nth-child(3),#organizations span:nth-child(3),#projects span:nth-child(3){
+    font-size: 16px;
+    margin-top: 6px;
+    color: white;
+} */
+#educations span:nth-child(2),#organizations span:nth-child(2){
+    font-size: 30px;
+    margin-top: 6px;
+    color: #4bffa5;
+}
+/* #projects span:nth-child(2){
+  color: white;
+  margin-bottom: 50px;
+} */
+meter::-webkit-meter-optimum-value {
+  background: #4bffa5; /* Green */
+}
+meter::-webkit-meter-bar {
+  background: none; /* Required to get rid of the default background property */
+  background-color: gray;
+  box-shadow: 0 5px 5px -5px #333 inset;
+}
+
+/* #educations div,#organizations div, #projects div{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: rgba(255,255,255,0.6);
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+} */
+
+
+form input{
+    float: left;
+    width: 38%;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    margin: 0 1%;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.typewrite {
+   
+  white-space: nowrap; /* Keeps the content on a single line */
+ font-family: monospace;
+ flex-wrap: wrap;
+  }
+form input:focus{
+    outline: none;
+    border-bottom: 3px solid #88236f;
+    padding-bottom: 8px;
+    transition: all ease 0.2s;
+}
+
+form:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+.bodyBG {
+  color: #FFF;
+  font-family: changa-one, sans-serif;
+  font-size: 50px;
+  background-color: #03031A;
+  background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNjAwJyBoZWlnaHQ9JzYwMCcgdmlld0JveD0nMCAwIDE1MCAxNTAnPgo8ZmlsdGVyIGlkPSdpJyB4PScwJyB5PScwJz4KCTxmZUNvbG9yTWF0cml4IHR5cGU9J21hdHJpeCcgdmFsdWVzPScxIDAgMCAwIDAgIDAgMSAwIDAgMCAgMCAwIDEgMCAwICAwIDAgMCAwIDAnIC8+CjwvZmlsdGVyPgo8ZmlsdGVyIGlkPSduJyB4PScwJyB5PScwJz4KCTxmZVR1cmJ1bGVuY2UgdHlwZT0ndHVyYnVsZW5jZScgYmFzZUZyZXF1ZW5jeT0nLjcnIHJlc3VsdD0nZnV6eicgbnVtT2N0YXZlcz0nMicgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPgoJPGZlQ29tcG9zaXRlIGluPSdTb3VyY2VHcmFwaGljJyBpbjI9J2Z1enonIG9wZXJhdG9yPSdhcml0aG1ldGljJyBrMT0nMCcgazI9JzEnIGszPSctNzMnIGs0PScuMDEnIC8+CjwvZmlsdGVyPgo8cmVjdCB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDIlJyBmaWxsPScjMDMwMzFhJy8+CjxyZWN0IHg9Jy0xJScgeT0nLTElJyB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDIlJyBmaWxsPScjZmZmZmZmJyBmaWx0ZXI9J3VybCgjbiknIG9wYWNpdHk9JzEnLz4KPHJlY3QgeD0nLTElJyB5PSctMSUnIHdpZHRoPScxMDIlJyBoZWlnaHQ9JzEwMiUnIGZpbGw9JyMwMzAzMWEnIGZpbHRlcj0ndXJsKCNpKScgb3BhY2l0eT0nMScvPgo8L3N2Zz4=');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.parallax {
+  min-height: 400px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("4-space.jpg");
+
+}
+
+
+.cross{
+  color:white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+left: 97%;}
+.icon-bar2 {
+  position: fixed;
+  top: 80%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+left: 3%;
+font-size: 14x;}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 13px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #4bffa5;
+}
+.item:hover{
+  background-color: #4bffa5;
+  transition: all 0.3s ease;
+}
+
+.facebook {
+  background: black;
+  color: white;
+}
+
+.twitter {
+  background: black;
+  color: white;
+}
+
+
+
+.linkedin {
+  background: black;
+  color: white;
+}
+
+
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+ #projects, .section{
+   margin-bottom: 170px;
+ }
+/* @media screen and (max-width: 700px) {
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 97%; 
+   z-index: 1;
+  
+  }
+  
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 13px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #4bffa5;
+  }
+  .item:hover{
+    background-color: #4bffa5;
+    transition: all 0.3s ease;
+  }
+  .typewrite {
+    white-space: nowrap; /* Keeps the content on a single line 
+   
+    }
+  
+} */
+@media only screen and (max-width: 600px) {
+    .icon-bar {
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 92%; 
+     z-index: 1;
+    
+    }
+    
+    .removeMargin{
+      margin-left: 0!important  ;
+      text-align: center;
+      margin-top: 0!important  ;
+
+     }
+     .hide{
+       display: none;
+     }
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 13px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+    
+    .icon-bar a:hover {
+      background-color: #4bffa5;
+    }
+    .item:hover{
+      background-color: #4bffa5;
+      transition: all 0.3s ease;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .icon-bar {
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 94%; 
+     z-index: 1;
+    
+    }
+    .removeMargin{
+      margin-left: auto;
+    }
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 13px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+    
+    .icon-bar a:hover {
+      background-color: #4bffa5;
+    }
+    .item:hover{
+      background-color: #4bffa5;
+      transition: all 0.3s ease;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .icon-bar {
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 95%; 
+     z-index: 1;
+    
+    }
+    
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 13px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+    
+    .icon-bar a:hover {
+      background-color: #4bffa5;
+    }
+    .item:hover{
+      background-color: #4bffa5;
+      transition: all 0.3s ease;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .icon-bar {
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 96%; 
+     z-index: 1;
+    
+    }
+    
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 13px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+    
+    .icon-bar a:hover {
+      background-color: #4bffa5;
+    }
+    .item:hover{
+      background-color: #4bffa5;
+      transition: all 0.3s ease;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .icon-bar {
+      position: fixed;
+      top: 60%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 93.5%; 
+     z-index: 1;
+    
+    }
+  
+    
+    
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 13px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+    
+    .icon-bar a:hover {
+      background-color: #4bffa5;
+    }
+    .item:hover{
+      background-color: #4bffa5;
+      transition: all 0.3s ease;
+    }
+}
+
+
+
+

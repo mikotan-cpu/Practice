@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="edit.css">
+  <link rel="stylesheet" href="login-page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+    .bag-dark{ 
+  background:transparent !important;
+        transition: 750ms ease;
+    }
+    .bag-dark.scrolled{ 
+      background-color: black !important;
+
+    }
+    </style>
+  <title>Document</title>
+</head>
+  <body onload="on2()">
+
+  <div id="overlay2" class="main" >
+    <main id="main-holder" style="margin-top: 50px;margin-left: 400px;">
+      
+      <h1 id="login-header" style="color: white;">Login</h1>
+      
+      <div id="login-error-msg-holder">
+        <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+      </div>
+      
+      <form id="login-form">
+        <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+        <input type="submit" value="Login" id="login-form-submit">
+      </form>
+    </main>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark text fixed-top bag-dark">
+    <a class="navbar-brand" href="#">CT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item "></li>
+          <a class="nav-link item" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link item" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link item" href="#organization">Organization</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link item" href="#project">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link item" href="#skill">Skills</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="icon-bar">
+    <span style="color: #4bffa5;  writing-mode: vertical-rl; margin-left: 10px;">Contact me</span>
+    <a  id="gitlink" href="" class="facebook"><i class="fa fa-github"></i></a> 
+    <button class="addButton" onclick="openForm4();on4() ">Edit</button>
+    <a id="twitlink" href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+    <button class="addButton" onclick="openForm5();on5()">Edit</button>
+
+    <a id="linklink" href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <button class="addButton" onclick="openForm6();on6()">Edit</button>
+
+  </div>
+  <!-- <div class="bodyBG"> -->
+    <div id="overlay">
+      <div class="form-popup " id="myForm" style="margin-top: 100px;">
+        <form  class="form-container formBG" id="add-education-form">
+          <h3 class="white">Add new Education details</h3>
+      
+          <input type="text" placeholder="School" name="school" required style="margin-bottom:20px ;">
+      
+          <input type="text" placeholder="Degree" name="degree" required style="margin-bottom:20px ;">
+
+          <input type="text" placeholder="Start Year" name="year_start" required style="margin-bottom:20px ;">
+
+          <input type="text" placeholder="End Year" name="year_end" required style="margin-bottom:20px ;">
+
+          <button class="btn closeButton">Submit</button>
+          <button type="button" class="btn cancel closeButton" onclick="closeForm(); off();reload()">Close</button>
+        </form>
+      </div>
+      </div>
+      <div id="overlay3">
+        <div class="form-popup" id="myForm3" style="margin-top: 100px;">
+          <form  class="form-container formBG" id="add-organization-form">
+            <h3 class="white">Add new Organization details</h3>
+        
+            <input type="text" placeholder="Name" name="name" required style="margin-bottom:20px ;">
+        
+            <input type="text" placeholder="Position" name="position" required style="margin-bottom:20px ;">
+  
+            <input type="text" placeholder="Start Year" name="year_start" required style="margin-bottom:20px ;">
+  
+            <input type="text" placeholder="End Year" name="year_end" required style="margin-bottom:20px ;">
+  
+            <button class="btn closeButton">Submit</button>
+            <button type="button" class="btn cancel closeButton" onclick="closeForm3(); off3();reload()">Close</button>
+          </form>
+        </div>
+        </div>
+        <div id="overlay4">
+          <div class="form-popup" id="myForm4" style="margin-top: 100px;">
+            <form  class="form-container formBG" id="edit-git-form">
+              <h3 class="white">New GitHub Link</h3>
+          
+              <input type="text" placeholder="New GitHub Link" name="new_gitlink" required style="margin-bottom:20px ;">
+    
+              <button class="btn closeButton">Submit</button>
+              <button type="button" class="btn cancel closeButton" onclick="closeForm4(); off4();reload()">Close</button>
+            </form>
+          </div>
+          </div>
+          <div id="overlay5">
+            <div class="form-popup" id="myForm5" style="margin-top: 100px;">
+              <form  class="form-container formBG" id="edit-twitter-form">
+                <h3 class="white">New Twitter Link</h3>
+            
+                <input type="text" placeholder="New Twitter Link" name="new_twitterlink" required style="margin-bottom:20px ;">
+      
+                <button class="btn closeButton">Submit</button>
+                <button type="button" class="btn cancel closeButton" onclick="closeForm5(); off5() ;reload()">Close</button>
+              </form>
+            </div>
+            </div>
+            <div id="overlay6">
+              <div class="form-popup" id="myForm6" style="margin-top: 100px;">
+                <form  class="form-container formBG" id="edit-linkedin-form">
+                  <h3 class="white">New LinkedIn Link</h3>
+              
+                  <input type="text" placeholder="New LinkedIn Link" name="new_linkedinlink" required style="margin-bottom:20px ;">
+        
+                  <button class="btn closeButton">Submit</button>
+                  <button type="button" class="btn cancel closeButton" onclick="closeForm6(); off6() ;reload()">Close</button>
+                </form>
+              </div>
+              </div>
+              <div id="overlay7">
+                <div class="form-popup" id="myForm7" style="margin-top: 100px;">
+                  <form  class="form-container formBG" id="edit-desc-form">
+                    <h3 class="white">Enter new description</h3>
+                
+                    <input type="text" placeholder="New description" name="new_desc" required style="margin-bottom:20px ;">
+          
+                    <button class="btn closeButton">Submit</button>
+                    <button type="button" class="btn cancel closeButton" onclick="closeForm7(); off7() ;reload()">Close</button>
+                  </form>
+                </div>
+                </div>
+                <div id="overlay8">
+                  <div class="form-popup" id="myForm8" style="margin-top: 100px;">
+                    <form  class="form-container formBG" id="add-project-form">
+                      <h3 class="white">Enter project details</h3>
+                  
+                      <input type="text" placeholder="Title" name="title" required style="margin-bottom:20px ;">
+                      <input type="text" placeholder="year" name="year" required style="margin-bottom:20px ;">
+
+                      <button class="btn closeButton">Submit</button>
+                      <button type="button" class="btn cancel closeButton" onclick="closeForm8(); off8() ;reload()">Close</button>
+                    </form>
+                  </div>
+                  </div>
+    
+  <div class="container " style=" margin-bottom: 100px">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="BW.jpg"></div>
+       <div class="typewriter animation centered margin" id="myTypewriter"> 
+          <h1 class="deets2">Welcome to my resume</h1>
+        </div>
+        <div class="bottom-left t2" style="color: white; font-size: 20px;">Hello, I'm <strong>Christian Tan. </strong>    <button class="addButton" onclick="openForm7();on7()">Edit</button>
+          <ul id ="others" class="info size"></ul> 
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container " style="background-color: black;">
+    <section id="education">>
+
+    <div class="row">
+      <div class="col-12"> 
+        <span class="deets" style="border:5px solid #4bffa5; border-radius: 50px; padding: 20px 20px;">Education <span class="iconify" data-icon="bi:book" data-inline="false" style="color: #4bffa5; margin-right: 20px; "></span><button class="addButton"onclick="openForm();on()">Add</button></span>
+        <ul id ="educations" class="info d-flex justify-content-center" style="flex-direction: row; margin-top: 50px; height: 500px; " ></ul> 
+      
+
+      </div>
+    </div>
+  </section>
+    <section id="organization">
+    <div class="row">
+      <div class="col-12"> 
+        <span class="deets" style="border:5px solid #4bffa5; border-radius: 50px; margin-top: 70px; padding: 20px 20px;">Organizations <span class="iconify" data-icon="clarity:organization-line" data-inline="false" style="color: #4bffa5; margin-right: 20px;"></span><button class="addButton"onclick="openForm3();on3()">Add</button></span>
+        <ul id ="organizations" class="info d-flex justify-content-center" style="flex-direction: row; margin-top: 50px; height: 500px; " ></ul> 
+      </div>
+    </div>
+    </section>
+    <section id="project">
+    <div class="row">
+      <div class="col-12"> 
+        <span class="deets" style="border:5px solid #4bffa5; border-radius: 50px; margin-top: 70px; padding: 20px 20px;">Projects <span class="iconify" data-icon="cib:when-i-work" data-inline="false" style="color: #4bffa5; margin-right: 20px;"></span><button class="addButton"onclick="openForm8();on8()">Add</button></span>
+        <ul id ="projects" class="info " style="margin-top: 50px;" ></ul> 
+      </div>
+    </section>
+    <section id="skill">
+      <div class="row">
+        <div class="col-12"> 
+          <span class="deets" style="border:5px solid #4bffa5; border-radius: 50px; margin-top: 70px; padding: 20px 20px;"> Technical Skills <span class="iconify" data-icon="bx:bx-wrench" data-inline="false" style="color: #4bffa5;"></span></span> <br><br>
+          <h3 style="font-size :25px; margin-left: 50px; color: white; margin-top: 20px;"><span>C</span><span style="margin-left: 780px;">80%</span></h3>
+          <meter id="disk_d" value="0.8" style="width : 1000px; height:25px;  margin-left: 50px;">60%</meter>
+          <h3 style="font-size :25px; margin-left: 50px; color: white; margin-top: 20px;"><span>Java</span><span style="margin-left: 630px;">70%</span></h3>
+          <meter id="disk_d" value="0.7" style="width : 1000px; height:25px;  margin-left: 50px;">60%</meter>
+          <h3 style="font-size :25px; margin-left: 50px; color: white; margin-top: 20px;"><span>JSP</span><span style="margin-left: 450px;">50%</span></h3>
+          <meter id="disk_d" value="0.5" style="width : 1000px; height:25px;  margin-left: 50px;">60%</meter>
+          <h3 style="font-size :25px; margin-left: 50px; color: white; margin-top: 20px;"><span>HTML/CSS/Javascript</span><span style="margin-left: 440px;">70%</span></h3>
+          <meter id="disk_d" value="0.7" style="width : 1000px; height:25px;  margin-left: 50px;">60%</meter>
+        </div>
+      </section>
+  </div>
+
+    <p id ="git" class="info" style="display: inline;"></p> 
+    <p id ="twitter" class="info" style="display: inline;"></p> 
+    <p id ="linkedin" class="info" style="display: inline;"></p> 
+  </div>
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="parallax.js-1.5.0/parallax.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBa_RKWXJ59Eqi2K2vJy0xLUcbUY8S7XcU",
+    authDomain: "ccapdev-mp1-e0b8d.firebaseapp.com",
+    databaseURL: "https://ccapdev-mp1-e0b8d.firebaseio.com",
+    projectId: "ccapdev-mp1-e0b8d",
+    storageBucket: "ccapdev-mp1-e0b8d.appspot.com",
+    messagingSenderId: "172334996287",
+    appId: "1:172334996287:web:dedbe970ea3288bc64118a",
+    measurementId: "G-87FC7D56TD"
+  };
+  // Initialize Firebase
+  var defaultProject = firebase.initializeApp(firebaseConfig);
+
+  var db = firebase.firestore()
+  const auth=firebase.auth()
+  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+
+
+
+  firebase.analytics();
+</script>
+<script src="edit.js"></script> 
+<script src="login-page.js"></script> 
+<script>
+  $(window).scroll(function(){
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 200);
+  });
+ </script>
+</body>
+</html>
